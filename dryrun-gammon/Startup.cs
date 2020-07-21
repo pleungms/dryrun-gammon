@@ -24,6 +24,13 @@ namespace dryrun_gammon
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            // The following line enables Application Insights telemetry collection.
+            services.AddApplicationInsightsTelemetry();
+
+            // This code adds other services for your application.
+            services.AddMvc();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
