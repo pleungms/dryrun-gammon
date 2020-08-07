@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: dryrun-gammon
-        image: peleuntestacr.azurecr.io/pleungms/dryrun-gammon:$BUILD_ID
+        image: gammondev.azurecr.io/devops-test:$BUILD_ID
         ports:
         - containerPort: 80
 ---
